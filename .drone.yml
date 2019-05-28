@@ -44,6 +44,7 @@ pipeline:
     image: fpfis/httpd-php-ci:7.1
     environment: *env
     commands:
+      - ./vendor/bin/run drupal:settings-setup
       - ./vendor/bin/run drupal:site-install
 
   behat:
