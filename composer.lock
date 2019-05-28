@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b4472a79d81ae56bbaefadf2c5f9dab",
+    "content-hash": "c922cbbb87fe952595f7d4601ba280fd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3234,9 +3234,14 @@
         {
             "name": "openeuropa/oe_theme",
             "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openeuropa/oe_theme.git",
+                "reference": "8848b707b892a7adedc76972e278508cdbec945e"
+            },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/openeuropa/oe_theme/releases/download/1.0.0/oe_theme-1.0.0.tar.gz",
+                "url": "https://api.github.com/repos/openeuropa/oe_theme/zipball/8848b707b892a7adedc76972e278508cdbec945e",
                 "reference": "8848b707b892a7adedc76972e278508cdbec945e",
                 "shasum": ""
             },
@@ -7078,6 +7083,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.0.x-dev"
+                },
+                "patches_applied": {
+                    "allow-date-only-date-fields": "https://patch-diff.githubusercontent.com/raw/jhedstrom/DrupalDriver/pull/201.patch"
                 }
             },
             "autoload": {
@@ -9514,6 +9522,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.x-dev"
+                },
+                "patches_applied": {
+                    "Fix conflict between scope indentation and array indentation checking. Ref. https://github.com/squizlabs/PHP_CodeSniffer/issues/2281": "https://gist.githubusercontent.com/drupol/c307b48fe4eb187b0833afb1d1b97e6a/raw/c3d414e9f4c182387ca9405c36f5daeb7b51ae05/phpcs-390bffe2265aac8184fdf86400c0d0841e65bc4b.patch",
+                    "Disable exact checking of multi-line chained method calls in Generic.WhiteSpace.ScopeIndent. Ref. https://github.com/squizlabs/PHP_CodeSniffer/pull/2372": "https://gist.githubusercontent.com/drupol/c307b48fe4eb187b0833afb1d1b97e6a/raw/c3d414e9f4c182387ca9405c36f5daeb7b51ae05/phpcs-pr-2372.patch"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
