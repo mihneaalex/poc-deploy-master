@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c922cbbb87fe952595f7d4601ba280fd",
+    "content-hash": "c9d3b837f238603889ab3518d3628e8c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7186,15 +7186,15 @@
         },
         {
             "name": "ec-europa/toolkit",
-            "version": "4.0.0-beta2",
+            "version": "dev-OPENEUROPA-1869",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ec-europa/toolkit.git",
+                "url": "https://github.com/openeuropa/toolkit.git",
                 "reference": "1a65fe1e437b1e023a1628e5d4f4f84f8147ba58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ec-europa/toolkit/zipball/1a65fe1e437b1e023a1628e5d4f4f84f8147ba58",
+                "url": "https://api.github.com/repos/openeuropa/toolkit/zipball/1a65fe1e437b1e023a1628e5d4f4f84f8147ba58",
                 "reference": "1a65fe1e437b1e023a1628e5d4f4f84f8147ba58",
                 "shasum": ""
             },
@@ -7220,12 +7220,20 @@
                     "EcEuropa\\Toolkit\\": "./src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "EcEuropa\\Toolkit\\Tests\\": "./tests/"
+                }
+            },
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Toolkit packaged for Drupal 8.",
             "homepage": "https://github.com/ec-europa/toolkit",
+            "support": {
+                "email": "europamanagement@ec.europa.eu",
+                "source": "https://github.com/ec-europa/toolkit"
+            },
             "time": "2019-04-11T12:14:11+00:00"
         },
         {
@@ -10022,7 +10030,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ec-europa/toolkit": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
